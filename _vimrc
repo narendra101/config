@@ -8,6 +8,8 @@ colorscheme elford
 set clipboard=unnamed
 set backspace=2
 set laststatus=2
+set nu
+set rnu
 syntax on
 
 call plug#begin('~/vimfiles/plugged')
