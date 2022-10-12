@@ -17,6 +17,11 @@ call plug#begin('~/vimfiles/plugged')
 call plug#end()
 
 
+" Config for File Explorer Like Nerdtree
+inoremap <c-b> <Esc>:Lex<cr>:vertical resize 30<cr>
+nnoremap <c-b> <Esc>:Lex<cr>:vertical resize 30<cr>
+
+
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
