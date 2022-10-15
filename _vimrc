@@ -4,12 +4,22 @@
 " this vim elford we need to clone and put in vimfiles
 " colorscheme elford
 " set nowrap
+
+"here gores the plugins
+call plug#begin('~/vimfiles/plugged')
+ Plug 'itchyny/lightline.vim'
+ Plug 'joshdick/onedark.vim'
+call plug#end()
+
+
+set background=dark
+syntax on
+syntax enable
+colorscheme onedark 
 set nocompatible
-colorscheme molokai
 filetype on
 filetype plugin on
 filetype indent on
-syntax on
 set nobackup
 set cursorcolumn
 set cursorline
@@ -20,8 +30,6 @@ set showmatch
 set ignorecase
 set expandtab
 set smartcase
-set showcmd
-set showcmd
 set showmode
 set hlsearch
 set wildmenu
@@ -34,10 +42,6 @@ set scrolloff=10
 set clipboard=unnamed
 set backspace=2
 set history=1000
-" set background=dark
-" call plug#begin('~/vimfiles/plugged')
- " Plug 'itchyny/lightline.vim'
-" call plug#end()
 
 
 " Config for File Explorer Like Nerdtree
